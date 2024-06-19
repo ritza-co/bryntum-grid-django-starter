@@ -1,6 +1,19 @@
 import {AjaxStore, Grid, StringHelper} from './grid.module.js';
 
 const store = new AjaxStore({
+  createUrl: "/horse_info/",
+  readUrl: "/horse_info/",
+  updateUrl: "/horse_info/",
+  deleteUrl: "/horse_info/",
+  autoLoad: true,
+  autoCommit: true,
+  useRestfulMethods: true,
+  httpMethods: {
+    read: "GET",
+    create: "POST",
+    update: "PATCH",
+    delete: "DELETE",
+  },
 
 
 });
