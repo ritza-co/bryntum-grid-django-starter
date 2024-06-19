@@ -36,7 +36,7 @@ sqlite3 db.sqlite3
 ```
 
 ```
-INSERT INTO horse (name, country, trainer, years_raced, percentage_wins) VALUES
+INSERT INTO horses (name, country, trainer, years_raced, percentage_wins) VALUES
 ('Kincsem', 'Hungary', 'Robert Hesp', 4, 100),
 ('Old Rosebud', 'United States', 'Frank D. Weir', 7, 50),
 ('Maximum Security', 'United States', 'Bob Baffert', 3, 71),
