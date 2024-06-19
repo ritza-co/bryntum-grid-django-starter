@@ -1,6 +1,6 @@
 # Bryntum Grid with Django Starter
 
-This repository contains the starter code for building a Bryntum Grid using Django. The code for the completed app is in the `completed-app` branch. To run this app, clone the repo and switch to `completed-app` before following the steps below. 
+This repository contains the starter code for building a Bryntum Grid using Django. The code for the completed app is in the `completed-app` branch. To run this app, clone the repo and switch to the `completed-app` branch before following the steps below. 
 
 ## Setup
 
@@ -36,7 +36,7 @@ sqlite3 db.sqlite3
 ```
 
 ```
-INSERT INTO api_horse (name, country, trainer, years_raced, percentage_wins) VALUES
+INSERT INTO horse (name, country, trainer, years_raced, percentage_wins) VALUES
 ('Kincsem', 'Hungary', 'Robert Hesp', 4, 100),
 ('Old Rosebud', 'United States', 'Frank D. Weir', 7, 50),
 ('Maximum Security', 'United States', 'Bob Baffert', 3, 71),
@@ -49,14 +49,17 @@ INSERT INTO api_horse (name, country, trainer, years_raced, percentage_wins) VAL
 ('Equinox', 'Japan', 'Tetsuya Kimura', 3, 80);
 ```
 
-If you don't have a licensed version of Bryntum Grid, download the trial version from [here](https://bryntum.com/download/). From the `/build` folder, copy the following files to the `static/bryntum-grid` folder: 
+Download the Bryntum Grid distribution folder [here](https://customerzone.bryntum.com/)
+
+If you don't have a license for the Bryntum Grid, download the trial version [here](https://bryntum.com/download/). From the `/build` folder, copy the following files to the `static/bryntum-grid` folder: 
 
 ```
 fonts
 locales
-grid.config.js
 grid.module.js
+grid.module.js.map
 grid.stockholm.css
+grid.stockholm.css.map
 ```
 
 Run the development server with:
@@ -65,4 +68,4 @@ Run the development server with:
 python manage.py runserver
 ```
 
-This will start a local server at ```http://localhost:8000` and you can view the Grid app.  
+This will start a local server at `http://localhost:8000` and you can view the Grid app.  
