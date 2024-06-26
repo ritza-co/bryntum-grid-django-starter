@@ -49,7 +49,7 @@ INSERT INTO horses (name, country, trainer, years_raced, percentage_wins) VALUES
 ('Equinox', 'Japan', 'Tetsuya Kimura', 3, 80);
 ```
 
-Download the Bryntum Grid distribution folder [here](https://customerzone.bryntum.com/)
+Download the Bryntum Grid distribution folder [here](https://customerzone.bryntum.com/).
 
 If you don't have a license for the Bryntum Grid, download the trial version [here](https://bryntum.com/download/). From the `/build` folder, copy the following files to the `static/bryntum-grid` folder: 
 
