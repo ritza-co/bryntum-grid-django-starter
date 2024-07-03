@@ -13,6 +13,11 @@ const store = new AjaxStore({
         create : 'POST',
         update : 'PATCH',
         delete : 'DELETE'
+    },
+    fetchOptions      : {
+        headers : {
+            'X-CSRFToken' : document.querySelector('[name=csrfmiddlewaretoken]').value
+        }
     }
 });
 
